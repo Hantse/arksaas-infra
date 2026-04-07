@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   source:
     repoURL: git@github.com:hantse/arksaas-infra.git
-    targetRevision: main
+    targetRevision: head
     path: clusters/k3s/prod
   revisionHistoryLimit: 3
   syncPolicy:

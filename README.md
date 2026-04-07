@@ -71,6 +71,44 @@ kubectl apply -f .\argocd\arksaas-image-updater.yaml -n argocd
 kubectl kustomize .\clusters\k3s\prod
 ```
 
+5. Appliquer l'environnement avec Kustomize :
+
+```powershell
+kubectl apply -k .\clusters\k3s\prod
+```
+
+Ne pas utiliser `kubectl apply -f .\clusters\k3s\prod` sur ce repo.
+Cette commande n'applique pas correctement toute l'arborescence Kustomize et peut laisser de cote des ressources comme les `ConfigMap`, `Secret` ou workloads ranges dans les sous-dossiers.
+
+## Authentification GHCR
+
+Si les images GHCR restent privees, le cluster doit disposer d'un secret Docker valide avec un token GitHub qui a au minimum le scope `read:packages`.
+
+Le plus simple est de recreer le secret directement :
+
+```powershell
+kubectl delete secret ghcr-pull -n arksaas-prod --ignore-not-found
+kubectl create secret docker-registry ghcr-pull `
+  --namespace arksaas-prod `
+  --docker-server=ghcr.io `
+  --docker-username=VOTRE_LOGIN_GITHUB `
+  --docker-password=VOTRE_PAT_GITHUB `
+  --docker-email=unused@example.com
+```
+
+Puis verifier :
+
+```powershell
+kubectl get secret ghcr-pull -n arksaas-prod
+kubectl rollout restart deploy -n arksaas-prod
+```
+
+Notes :
+
+- si tu utilises un PAT GitHub classique, il doit avoir `read:packages`
+- si le package GHCR appartient a une organisation, il faut aussi que ce token ait acces a cette organisation
+- si tu preferes eviter un secret prive, tu peux rendre les packages GHCR publics
+
 ## Notes utiles
 
 - Les images sont taggees au SHA Git dans le repo applicatif, donc l'`ImageUpdater` attend des tags de 40 caracteres hexadecimaux.
