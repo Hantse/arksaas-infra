@@ -24,31 +24,31 @@ resources:
 images:
   - name: ghcr.io/hantse/arksaas-gateway
     newName: ghcr.io/hantse/arksaas-gateway
-    newTag: "f71f9c230f2fa3d8716f5ac7a06f89e4dea17bcc"
+    newTag: e4151287e10769fa0a9b0e6527376bfb4c1acbc3
   - name: ghcr.io/hantse/arksaas-admin-service
     newName: ghcr.io/hantse/arksaas-admin-service
-    newTag: "f71f9c230f2fa3d8716f5ac7a06f89e4dea17bcc"
+    newTag: e4151287e10769fa0a9b0e6527376bfb4c1acbc3
   - name: ghcr.io/hantse/arksaas-agent-service
     newName: ghcr.io/hantse/arksaas-agent-service
-    newTag: "f71f9c230f2fa3d8716f5ac7a06f89e4dea17bcc"
+    newTag: e4151287e10769fa0a9b0e6527376bfb4c1acbc3
   - name: ghcr.io/hantse/arksaas-billing-service
     newName: ghcr.io/hantse/arksaas-billing-service
-    newTag: "f71f9c230f2fa3d8716f5ac7a06f89e4dea17bcc"
+    newTag: e4151287e10769fa0a9b0e6527376bfb4c1acbc3
   - name: ghcr.io/hantse/arksaas-data-service
     newName: ghcr.io/hantse/arksaas-data-service
-    newTag: "f71f9c230f2fa3d8716f5ac7a06f89e4dea17bcc"
+    newTag: e4151287e10769fa0a9b0e6527376bfb4c1acbc3
   - name: ghcr.io/hantse/arksaas-identity-service
     newName: ghcr.io/hantse/arksaas-identity-service
-    newTag: "f71f9c230f2fa3d8716f5ac7a06f89e4dea17bcc"
+    newTag: e4151287e10769fa0a9b0e6527376bfb4c1acbc3
   - name: ghcr.io/hantse/arksaas-llm-service
     newName: ghcr.io/hantse/arksaas-llm-service
-    newTag: "f71f9c230f2fa3d8716f5ac7a06f89e4dea17bcc"
+    newTag: e4151287e10769fa0a9b0e6527376bfb4c1acbc3
   - name: ghcr.io/hantse/arksaas-notification-service
     newName: ghcr.io/hantse/arksaas-notification-service
-    newTag: "f71f9c230f2fa3d8716f5ac7a06f89e4dea17bcc"
+    newTag: e4151287e10769fa0a9b0e6527376bfb4c1acbc3
   - name: ghcr.io/hantse/arksaas-permission-service
     newName: ghcr.io/hantse/arksaas-permission-service
-    newTag: "f71f9c230f2fa3d8716f5ac7a06f89e4dea17bcc"
+    newTag: e4151287e10769fa0a9b0e6527376bfb4c1acbc3
   - name: ghcr.io/hantse/arksaas-server-provisioning-service
     newName: ghcr.io/hantse/arksaas-server-provisioning-service
-    newTag: "f71f9c230f2fa3d8716f5ac7a06f89e4dea17bcc"
+    newTag: e4151287e10769fa0a9b0e6527376bfb4c1acbc3
