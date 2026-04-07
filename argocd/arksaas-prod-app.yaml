@@ -9,7 +9,7 @@ spec:
     namespace: arksaas-prod
     server: https://kubernetes.default.svc
   source:
-    repoURL: git@github.com:your-org/arksaas-infra.git
+    repoURL: git@github.com:hantse/arksaas-infra.git
     targetRevision: main
     path: clusters/k3s/prod
   revisionHistoryLimit: 3

@@ -23,33 +23,33 @@ resources:
   - services/permission/workload.yaml
   - services/server-provisioning/workload.yaml
 images:
-  - name: ghcr.io/your-org/arksaas-gateway
-    newName: ghcr.io/your-org/arksaas-gateway
+  - name: ghcr.io/hantse/arksaas-gateway
+    newName: ghcr.io/hantse/arksaas-gateway
     newTag: "0000000000000000000000000000000000000000"
-  - name: ghcr.io/your-org/arksaas-admin-service
-    newName: ghcr.io/your-org/arksaas-admin-service
+  - name: ghcr.io/hantse/arksaas-admin-service
+    newName: ghcr.io/hantse/arksaas-admin-service
     newTag: "0000000000000000000000000000000000000000"
-  - name: ghcr.io/your-org/arksaas-agent-service
-    newName: ghcr.io/your-org/arksaas-agent-service
+  - name: ghcr.io/hantse/arksaas-agent-service
+    newName: ghcr.io/hantse/arksaas-agent-service
     newTag: "0000000000000000000000000000000000000000"
-  - name: ghcr.io/your-org/arksaas-billing-service
-    newName: ghcr.io/your-org/arksaas-billing-service
+  - name: ghcr.io/hantse/arksaas-billing-service
+    newName: ghcr.io/hantse/arksaas-billing-service
     newTag: "0000000000000000000000000000000000000000"
-  - name: ghcr.io/your-org/arksaas-data-service
-    newName: ghcr.io/your-org/arksaas-data-service
+  - name: ghcr.io/hantse/arksaas-data-service
+    newName: ghcr.io/hantse/arksaas-data-service
     newTag: "0000000000000000000000000000000000000000"
-  - name: ghcr.io/your-org/arksaas-identity-service
-    newName: ghcr.io/your-org/arksaas-identity-service
+  - name: ghcr.io/hantse/arksaas-identity-service
+    newName: ghcr.io/hantse/arksaas-identity-service
     newTag: "0000000000000000000000000000000000000000"
-  - name: ghcr.io/your-org/arksaas-llm-service
-    newName: ghcr.io/your-org/arksaas-llm-service
+  - name: ghcr.io/hantse/arksaas-llm-service
+    newName: ghcr.io/hantse/arksaas-llm-service
     newTag: "0000000000000000000000000000000000000000"
-  - name: ghcr.io/your-org/arksaas-notification-service
-    newName: ghcr.io/your-org/arksaas-notification-service
+  - name: ghcr.io/hantse/arksaas-notification-service
+    newName: ghcr.io/hantse/arksaas-notification-service
     newTag: "0000000000000000000000000000000000000000"
-  - name: ghcr.io/your-org/arksaas-permission-service
-    newName: ghcr.io/your-org/arksaas-permission-service
+  - name: ghcr.io/hantse/arksaas-permission-service
+    newName: ghcr.io/hantse/arksaas-permission-service
     newTag: "0000000000000000000000000000000000000000"
-  - name: ghcr.io/your-org/arksaas-server-provisioning-service
-    newName: ghcr.io/your-org/arksaas-server-provisioning-service
+  - name: ghcr.io/hantse/arksaas-server-provisioning-service
+    newName: ghcr.io/hantse/arksaas-server-provisioning-service
     newTag: "0000000000000000000000000000000000000000"

@@ -15,7 +15,7 @@ spec:
       serviceAccountName: arksaas-sa
       containers:
         - name: agent-service
-          image: ghcr.io/your-org/arksaas-agent-service:0000000000000000000000000000000000000000
+          image: ghcr.io/hantse/arksaas-agent-service:0000000000000000000000000000000000000000
           imagePullPolicy: IfNotPresent
           ports:
             - name: http

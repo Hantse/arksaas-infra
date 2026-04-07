@@ -40,7 +40,7 @@ Squelette GitOps/Kubernetes pour deployer les services backend de `ark-saas-mana
 
 ## Remplacements obligatoires avant usage
 
-1. Remplacer `your-org` dans :
+1. Remplacer `hantse` dans :
    - `argocd/arksaas-project.yaml`
    - `argocd/arksaas-prod-app.yaml`
    - `argocd/arksaas-image-updater.yaml`

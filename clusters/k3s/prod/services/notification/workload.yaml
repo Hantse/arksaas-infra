@@ -15,7 +15,7 @@ spec:
       serviceAccountName: arksaas-sa
       initContainers:
         - name: migrate-notification
-          image: ghcr.io/your-org/arksaas-notification-service:0000000000000000000000000000000000000000
+          image: ghcr.io/hantse/arksaas-notification-service:0000000000000000000000000000000000000000
           imagePullPolicy: IfNotPresent
           env:
             - name: Startup__RunDatabaseMigrationsOnly
@@ -31,7 +31,7 @@ spec:
               readOnly: true
       containers:
         - name: notification-service
-          image: ghcr.io/your-org/arksaas-notification-service:0000000000000000000000000000000000000000
+          image: ghcr.io/hantse/arksaas-notification-service:0000000000000000000000000000000000000000
           imagePullPolicy: IfNotPresent
           ports:
             - name: http

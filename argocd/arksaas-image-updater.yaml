@@ -15,83 +15,83 @@ spec:
     - namePattern: arksaas-prod
       images:
         - alias: gateway
-          imageName: ghcr.io/your-org/arksaas-gateway
+          imageName: ghcr.io/hantse/arksaas-gateway
           commonUpdateSettings:
             allowTags: regexp:^[0-9a-f]{40}$
             updateStrategy: newest-build
           manifestTargets:
             kustomize:
-              name: ghcr.io/your-org/arksaas-gateway
+              name: ghcr.io/hantse/arksaas-gateway
         - alias: admin
-          imageName: ghcr.io/your-org/arksaas-admin-service
+          imageName: ghcr.io/hantse/arksaas-admin-service
           commonUpdateSettings:
             allowTags: regexp:^[0-9a-f]{40}$
             updateStrategy: newest-build
           manifestTargets:
             kustomize:
-              name: ghcr.io/your-org/arksaas-admin-service
+              name: ghcr.io/hantse/arksaas-admin-service
         - alias: agent
-          imageName: ghcr.io/your-org/arksaas-agent-service
+          imageName: ghcr.io/hantse/arksaas-agent-service
           commonUpdateSettings:
             allowTags: regexp:^[0-9a-f]{40}$
             updateStrategy: newest-build
           manifestTargets:
             kustomize:
-              name: ghcr.io/your-org/arksaas-agent-service
+              name: ghcr.io/hantse/arksaas-agent-service
         - alias: billing
-          imageName: ghcr.io/your-org/arksaas-billing-service
+          imageName: ghcr.io/hantse/arksaas-billing-service
           commonUpdateSettings:
             allowTags: regexp:^[0-9a-f]{40}$
             updateStrategy: newest-build
           manifestTargets:
             kustomize:
-              name: ghcr.io/your-org/arksaas-billing-service
+              name: ghcr.io/hantse/arksaas-billing-service
         - alias: data
-          imageName: ghcr.io/your-org/arksaas-data-service
+          imageName: ghcr.io/hantse/arksaas-data-service
           commonUpdateSettings:
             allowTags: regexp:^[0-9a-f]{40}$
             updateStrategy: newest-build
           manifestTargets:
             kustomize:
-              name: ghcr.io/your-org/arksaas-data-service
+              name: ghcr.io/hantse/arksaas-data-service
         - alias: identity
-          imageName: ghcr.io/your-org/arksaas-identity-service
+          imageName: ghcr.io/hantse/arksaas-identity-service
           commonUpdateSettings:
             allowTags: regexp:^[0-9a-f]{40}$
             updateStrategy: newest-build
           manifestTargets:
             kustomize:
-              name: ghcr.io/your-org/arksaas-identity-service
+              name: ghcr.io/hantse/arksaas-identity-service
         - alias: llm
-          imageName: ghcr.io/your-org/arksaas-llm-service
+          imageName: ghcr.io/hantse/arksaas-llm-service
           commonUpdateSettings:
             allowTags: regexp:^[0-9a-f]{40}$
             updateStrategy: newest-build
           manifestTargets:
             kustomize:
-              name: ghcr.io/your-org/arksaas-llm-service
+              name: ghcr.io/hantse/arksaas-llm-service
         - alias: notification
-          imageName: ghcr.io/your-org/arksaas-notification-service
+          imageName: ghcr.io/hantse/arksaas-notification-service
           commonUpdateSettings:
             allowTags: regexp:^[0-9a-f]{40}$
             updateStrategy: newest-build
           manifestTargets:
             kustomize:
-              name: ghcr.io/your-org/arksaas-notification-service
+              name: ghcr.io/hantse/arksaas-notification-service
         - alias: permission
-          imageName: ghcr.io/your-org/arksaas-permission-service
+          imageName: ghcr.io/hantse/arksaas-permission-service
           commonUpdateSettings:
             allowTags: regexp:^[0-9a-f]{40}$
             updateStrategy: newest-build
           manifestTargets:
             kustomize:
-              name: ghcr.io/your-org/arksaas-permission-service
+              name: ghcr.io/hantse/arksaas-permission-service
         - alias: server-provisioning
-          imageName: ghcr.io/your-org/arksaas-server-provisioning-service
+          imageName: ghcr.io/hantse/arksaas-server-provisioning-service
           commonUpdateSettings:
             allowTags: regexp:^[0-9a-f]{40}$
             updateStrategy: newest-build
           manifestTargets:
             kustomize:
-              name: ghcr.io/your-org/arksaas-server-provisioning-service
+              name: ghcr.io/hantse/arksaas-server-provisioning-service
 

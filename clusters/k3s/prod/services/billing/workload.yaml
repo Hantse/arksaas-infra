@@ -15,7 +15,7 @@ spec:
       serviceAccountName: arksaas-sa
       initContainers:
         - name: migrate-billing
-          image: ghcr.io/your-org/arksaas-billing-service:0000000000000000000000000000000000000000
+          image: ghcr.io/hantse/arksaas-billing-service:0000000000000000000000000000000000000000
           imagePullPolicy: IfNotPresent
           env:
             - name: Startup__RunDatabaseMigrationsOnly
@@ -31,7 +31,7 @@ spec:
               readOnly: true
       containers:
         - name: billing-service
-          image: ghcr.io/your-org/arksaas-billing-service:0000000000000000000000000000000000000000
+          image: ghcr.io/hantse/arksaas-billing-service:0000000000000000000000000000000000000000
           imagePullPolicy: IfNotPresent
           ports:
             - name: http

@@ -15,7 +15,7 @@ spec:
       serviceAccountName: arksaas-sa
       containers:
         - name: llm-service
-          image: ghcr.io/your-org/arksaas-llm-service:0000000000000000000000000000000000000000
+          image: ghcr.io/hantse/arksaas-llm-service:0000000000000000000000000000000000000000
           imagePullPolicy: IfNotPresent
           ports:
             - name: http

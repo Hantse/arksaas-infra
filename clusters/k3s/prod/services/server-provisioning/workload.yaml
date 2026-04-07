@@ -15,7 +15,7 @@ spec:
       serviceAccountName: arksaas-sa
       initContainers:
         - name: migrate-server-provisioning
-          image: ghcr.io/your-org/arksaas-server-provisioning-service:0000000000000000000000000000000000000000
+          image: ghcr.io/hantse/arksaas-server-provisioning-service:0000000000000000000000000000000000000000
           imagePullPolicy: IfNotPresent
           env:
             - name: Startup__RunDatabaseMigrationsOnly
@@ -31,7 +31,7 @@ spec:
               readOnly: true
       containers:
         - name: server-provisioning-service
-          image: ghcr.io/your-org/arksaas-server-provisioning-service:0000000000000000000000000000000000000000
+          image: ghcr.io/hantse/arksaas-server-provisioning-service:0000000000000000000000000000000000000000
           imagePullPolicy: IfNotPresent
           ports:
             - name: http

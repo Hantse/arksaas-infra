@@ -6,7 +6,7 @@ metadata:
 spec:
   description: GitOps project for ArkSaas production workloads.
   sourceRepos:
-    - git@github.com:your-org/arksaas-infra.git
+    - git@github.com:hantse/arksaas-infra.git
   destinations:
     - namespace: arksaas-prod
       server: https://kubernetes.default.svc
