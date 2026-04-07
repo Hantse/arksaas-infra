@@ -49,7 +49,6 @@ Squelette GitOps/Kubernetes pour deployer les services backend de `ark-saas-mana
    - `clusters/k3s/prod/configs/arksaas-public-config.yaml`
    - `clusters/k3s/prod/secrets/runtime-secrets.yaml`
    - `clusters/k3s/prod/secrets/firebase-admin-secret.yaml`
-   - `clusters/k3s/prod/secrets/ghcr-pull-secret.yaml`
 3. Adapter le host d'ingress dans `clusters/k3s/prod/ingress.yaml`
 4. Verifier que le workflow applicatif pousse bien les images GHCR attendues
 
@@ -86,6 +85,8 @@ On s'appuie sur l'option ArgoCD `CreateNamespace=true` pour eviter les erreurs d
 ## Authentification GHCR
 
 Si les images GHCR restent privees, le cluster doit disposer d'un secret Docker valide avec un token GitHub qui a au minimum le scope `read:packages`.
+
+Le secret `ghcr-pull` n'est plus gere par ce repo GitOps pour eviter qu'un placeholder n'ecrase un secret cree manuellement ou via un autre systeme de secrets.
 
 Le plus simple est de recreer le secret directement :
 

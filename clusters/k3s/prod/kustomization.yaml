@@ -8,7 +8,6 @@ resources:
   - serviceaccount.yaml
   - ingress.yaml
   - configs/arksaas-public-config.yaml
-  - secrets/ghcr-pull-secret.yaml
   - secrets/runtime-secrets.yaml
   - secrets/firebase-admin-secret.yaml
   - services/gateway/workload.yaml
