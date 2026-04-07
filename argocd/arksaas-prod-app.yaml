@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: arksaas-prod
+  namespace: argocd
+spec:
+  project: arksaas
+  destination:
+    namespace: arksaas-prod
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: git@github.com:your-org/arksaas-infra.git
+    targetRevision: main
+    path: clusters/k3s/prod
+  revisionHistoryLimit: 3
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+      - PrunePropagationPolicy=foreground
+      - PruneLast=true
+

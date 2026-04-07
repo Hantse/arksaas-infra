@@ -1,0 +1,55 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: arksaas-prod
+labels:
+  - pairs:
+      app.kubernetes.io/part-of: arksaas
+resources:
+  - namespace.yaml
+  - serviceaccount.yaml
+  - ingress.yaml
+  - configs/arksaas-public-config.yaml
+  - secrets/ghcr-pull-secret.yaml
+  - secrets/runtime-secrets.yaml
+  - secrets/firebase-admin-secret.yaml
+  - services/gateway/workload.yaml
+  - services/identity/workload.yaml
+  - services/admin/workload.yaml
+  - services/agent/workload.yaml
+  - services/billing/workload.yaml
+  - services/data/workload.yaml
+  - services/llm/workload.yaml
+  - services/notification/workload.yaml
+  - services/permission/workload.yaml
+  - services/server-provisioning/workload.yaml
+images:
+  - name: ghcr.io/your-org/arksaas-gateway
+    newName: ghcr.io/your-org/arksaas-gateway
+    newTag: "0000000000000000000000000000000000000000"
+  - name: ghcr.io/your-org/arksaas-admin-service
+    newName: ghcr.io/your-org/arksaas-admin-service
+    newTag: "0000000000000000000000000000000000000000"
+  - name: ghcr.io/your-org/arksaas-agent-service
+    newName: ghcr.io/your-org/arksaas-agent-service
+    newTag: "0000000000000000000000000000000000000000"
+  - name: ghcr.io/your-org/arksaas-billing-service
+    newName: ghcr.io/your-org/arksaas-billing-service
+    newTag: "0000000000000000000000000000000000000000"
+  - name: ghcr.io/your-org/arksaas-data-service
+    newName: ghcr.io/your-org/arksaas-data-service
+    newTag: "0000000000000000000000000000000000000000"
+  - name: ghcr.io/your-org/arksaas-identity-service
+    newName: ghcr.io/your-org/arksaas-identity-service
+    newTag: "0000000000000000000000000000000000000000"
+  - name: ghcr.io/your-org/arksaas-llm-service
+    newName: ghcr.io/your-org/arksaas-llm-service
+    newTag: "0000000000000000000000000000000000000000"
+  - name: ghcr.io/your-org/arksaas-notification-service
+    newName: ghcr.io/your-org/arksaas-notification-service
+    newTag: "0000000000000000000000000000000000000000"
+  - name: ghcr.io/your-org/arksaas-permission-service
+    newName: ghcr.io/your-org/arksaas-permission-service
+    newTag: "0000000000000000000000000000000000000000"
+  - name: ghcr.io/your-org/arksaas-server-provisioning-service
+    newName: ghcr.io/your-org/arksaas-server-provisioning-service
+    newTag: "0000000000000000000000000000000000000000"

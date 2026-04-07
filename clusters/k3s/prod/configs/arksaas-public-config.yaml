@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: arksaas-public-config
+data:
+  Firebase__ProjectId: change-me-project-id
+  Firebase__CredentialPath: /var/run/secrets/arksaas/firebase/firebase-adminsdk.json
+  PlatformAccess__AdminEmails__0: admin@example.com
+  Cors__AllowedOrigins__0: https://app.example.com
+  Cors__AllowedWildcardOrigins__0: https://preview.example.com
+  Jaeger__Host: http://jaeger-collector.observability.svc.cluster.local:4317
+  Seq__Url: https://seq.example.com
+  Ollama__BaseUrl: http://ollama.arksaas.svc.cluster.local:11434
+

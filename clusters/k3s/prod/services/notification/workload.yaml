@@ -1,0 +1,91 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: notification-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: notification-service
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: notification-service
+    spec:
+      serviceAccountName: arksaas-sa
+      initContainers:
+        - name: migrate-notification
+          image: ghcr.io/your-org/arksaas-notification-service:0000000000000000000000000000000000000000
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: Startup__RunDatabaseMigrationsOnly
+              value: "true"
+          envFrom:
+            - configMapRef:
+                name: arksaas-public-config
+            - secretRef:
+                name: arksaas-runtime-secrets
+          volumeMounts:
+            - name: firebase-admin
+              mountPath: /var/run/secrets/arksaas/firebase
+              readOnly: true
+      containers:
+        - name: notification-service
+          image: ghcr.io/your-org/arksaas-notification-service:0000000000000000000000000000000000000000
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8080
+            - name: grpc
+              containerPort: 8081
+          env:
+            - name: NotificationDatabase__ApplyMigrationsOnStartup
+              value: "false"
+          envFrom:
+            - configMapRef:
+                name: arksaas-public-config
+            - secretRef:
+                name: arksaas-runtime-secrets
+          volumeMounts:
+            - name: firebase-admin
+              mountPath: /var/run/secrets/arksaas/firebase
+              readOnly: true
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: http
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: http
+            initialDelaySeconds: 30
+            periodSeconds: 20
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
+      volumes:
+        - name: firebase-admin
+          secret:
+            secretName: firebase-admin
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: notification-service
+spec:
+  selector:
+    app.kubernetes.io/name: notification-service
+  ports:
+    - name: http
+      port: 8080
+      targetPort: http
+    - name: grpc
+      port: 8081
+      targetPort: grpc
+

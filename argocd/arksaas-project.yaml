@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: arksaas
+  namespace: argocd
+spec:
+  description: GitOps project for ArkSaas production workloads.
+  sourceRepos:
+    - git@github.com:your-org/arksaas-infra.git
+  destinations:
+    - namespace: arksaas-prod
+      server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+    - group: "*"
+      kind: "*"
+
