@@ -3,12 +3,11 @@ kind: ConfigMap
 metadata:
   name: arksaas-public-config
 data:
-  Firebase__ProjectId: change-me-project-id
+  Firebase__ProjectId: arksaas
   Firebase__CredentialPath: /var/run/secrets/arksaas/firebase/firebase-adminsdk.json
-  PlatformAccess__AdminEmails__0: admin@example.com
-  Cors__AllowedOrigins__0: https://app.example.com
-  Cors__AllowedWildcardOrigins__0: https://preview.example.com
-  Jaeger__Host: http://jaeger-collector.observability.svc.cluster.local:4317
-  Seq__Url: https://seq.example.com
-  Ollama__BaseUrl: http://ollama.arksaas.svc.cluster.local:11434
-
+  PlatformAccess__AdminEmails__0: hantse1989@gmail.com
+  Cors__AllowedOrigins__0: https://orkestrix.online
+  Cors__AllowedOrigins__1: https://api.orkestrix.online
+  Jaeger__Host: http://monitoringvm:4317
+  Seq__Url: https://seq.fluxspool.app
+  Ollama__BaseUrl: http://localhost:11434
