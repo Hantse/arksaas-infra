@@ -80,6 +80,9 @@ kubectl apply -k .\clusters\k3s\prod
 Ne pas utiliser `kubectl apply -f .\clusters\k3s\prod` sur ce repo.
 Cette commande n'applique pas correctement toute l'arborescence Kustomize et peut laisser de cote des ressources comme les `ConfigMap`, `Secret` ou workloads ranges dans les sous-dossiers.
 
+Le namespace `arksaas-prod` n'est pas versionne comme ressource Kubernetes dans ce repo.
+On s'appuie sur l'option ArgoCD `CreateNamespace=true` pour eviter les erreurs de permission sur les ressources cluster-scoped de type `Namespace`.
+
 ## Authentification GHCR
 
 Si les images GHCR restent privees, le cluster doit disposer d'un secret Docker valide avec un token GitHub qui a au minimum le scope `read:packages`.
