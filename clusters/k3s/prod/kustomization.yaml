@@ -13,6 +13,7 @@ resources:
   - services/gateway/workload.yaml
   - services/identity/workload.yaml
   - services/admin/workload.yaml
+  - services/frontend/workload.yaml
   - services/agent/workload.yaml
   - services/billing/workload.yaml
   - services/data/workload.yaml
@@ -51,3 +52,6 @@ images:
   - name: ghcr.io/hantse/arksaas-server-provisioning-service
     newName: ghcr.io/hantse/arksaas-server-provisioning-service
     newTag: e4151287e10769fa0a9b0e6527376bfb4c1acbc3
+  - name: ghcr.io/hantse/orkestrix-frontend
+    newName: ghcr.io/hantse/orkestrix-frontend
+    newTag: sha-ec849027f58669c36573532b1bae92a8add552c6
