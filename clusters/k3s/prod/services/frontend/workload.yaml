@@ -2,26 +2,25 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orkestrix-frontend
-  namespace: arksaas-prod
 spec:
   replicas: 3
-  revisionHistoryLimit: 3  
+  revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: orkestrix-frontend
+      app.kubernetes.io/name: orkestrix-frontend
   template:
     metadata:
       labels:
-        app: orkestrix-frontend
+        app.kubernetes.io/name: orkestrix-frontend
     spec:
       serviceAccountName: arksaas-sa
-      imagePullSecrets:
-        - name: ghcr      
       containers:
         - name: orkestrix-frontend
           image: ghcr.io/hantse/orkestrix-frontend:sha-9baac66fa5fedb4a3b25024df163dadd1b3e128e
+          imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 80
+            - name: http
+              containerPort: 80
 
 ---
 apiVersion: v1
@@ -36,4 +35,4 @@ spec:
   ports:
     - name: http
       port: 80
-      targetPort: http            
+      targetPort: http

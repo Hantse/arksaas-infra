@@ -94,4 +94,11 @@ spec:
           manifestTargets:
             kustomize:
               name: ghcr.io/hantse/arksaas-server-provisioning-service
-
+        - alias: frontend
+          imageName: ghcr.io/hantse/orkestrix-frontend
+          commonUpdateSettings:
+            allowTags: regexp:^[0-9a-f]{40}$
+            updateStrategy: newest-build
+          manifestTargets:
+            kustomize:
+              name: ghcr.io/hantse/orkestrix-frontend
