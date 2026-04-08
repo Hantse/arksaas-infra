@@ -54,4 +54,4 @@ images:
     newTag: 316cbe4bae5a9e13c1221299abe60539dd44c79e
   - name: ghcr.io/hantse/orkestrix-frontend
     newName: ghcr.io/hantse/orkestrix-frontend
-    newTag: sha-74b26ac318bb5a78094fc5842f171c2a350c2680
+    newTag: sha-e14ea27cd5cb3c2f3d986c709d0b718828ac4175
