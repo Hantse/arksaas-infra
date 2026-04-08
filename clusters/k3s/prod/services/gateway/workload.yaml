@@ -57,12 +57,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: gateway-service
+  name: gateway-service-lb
 spec:
   type: LoadBalancer
   loadBalancerIP: 192.168.100.210
   selector:
-    app.kubernetes.io/name: gateway
+    app: gateway
   ports:
     - name: http
       port: 80
