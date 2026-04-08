@@ -39,7 +39,7 @@ images:
     newTag: 40d5916c97e3698614656c97146c85efca4381d9
   - name: ghcr.io/hantse/arksaas-identity-service
     newName: ghcr.io/hantse/arksaas-identity-service
-    newTag: a3296fa83eaa4c8b693b4fa7c2c866cdd1f894e0
+    newTag: 40d5916c97e3698614656c97146c85efca4381d9
   - name: ghcr.io/hantse/arksaas-llm-service
     newName: ghcr.io/hantse/arksaas-llm-service
     newTag: 40d5916c97e3698614656c97146c85efca4381d9
