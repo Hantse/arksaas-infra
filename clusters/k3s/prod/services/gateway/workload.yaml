@@ -4,6 +4,7 @@ metadata:
   name: gateway
 spec:
   replicas: 3
+  revisionHistoryLimit: 1
   selector:
     matchLabels:
       app.kubernetes.io/name: gateway

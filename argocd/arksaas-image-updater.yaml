@@ -97,7 +97,7 @@ spec:
         - alias: frontend
           imageName: ghcr.io/hantse/orkestrix-frontend
           commonUpdateSettings:
-            allowTags: regexp:^[0-9a-f]{40}$
+            allowTags: regexp:^sha-[0-9a-f]{40}$
             updateStrategy: newest-build
           manifestTargets:
             kustomize:

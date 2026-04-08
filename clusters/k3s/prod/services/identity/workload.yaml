@@ -4,6 +4,7 @@ metadata:
   name: identity-service
 spec:
   replicas: 1
+  revisionHistoryLimit: 1
   selector:
     matchLabels:
       app.kubernetes.io/name: identity-service
@@ -88,4 +89,3 @@ spec:
     - name: grpc
       port: 8081
       targetPort: grpc
-
