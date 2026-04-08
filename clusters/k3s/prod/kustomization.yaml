@@ -45,7 +45,7 @@ images:
     newTag: 4513bb0f29bbe40763aa12b6ebbe17ec53bde4c8
   - name: ghcr.io/hantse/arksaas-notification-service
     newName: ghcr.io/hantse/arksaas-notification-service
-    newTag: c4f3ed609d1105ababcc79e48c4a3a367e1037b5
+    newTag: 4513bb0f29bbe40763aa12b6ebbe17ec53bde4c8
   - name: ghcr.io/hantse/arksaas-permission-service
     newName: ghcr.io/hantse/arksaas-permission-service
     newTag: 4513bb0f29bbe40763aa12b6ebbe17ec53bde4c8
