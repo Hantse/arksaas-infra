@@ -14,10 +14,11 @@ spec:
         app.kubernetes.io/name: orkestrix-frontend
     spec:
       serviceAccountName: arksaas-sa
+      imagePullSecrets:
+        - name: ghcr-pull
       containers:
         - name: orkestrix-frontend
           image: ghcr.io/hantse/orkestrix-frontend:sha-9baac66fa5fedb4a3b25024df163dadd1b3e128e
-          imagePullPolicy: IfNotPresent
           ports:
             - name: http
               containerPort: 80
