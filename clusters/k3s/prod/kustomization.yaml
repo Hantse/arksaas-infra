@@ -27,7 +27,7 @@ images:
     newTag: a3296fa83eaa4c8b693b4fa7c2c866cdd1f894e0
   - name: ghcr.io/hantse/arksaas-admin-service
     newName: ghcr.io/hantse/arksaas-admin-service
-    newTag: 9027679dd6a9bd67bead9efb98e3d53f7d1dcf4f
+    newTag: a3296fa83eaa4c8b693b4fa7c2c866cdd1f894e0
   - name: ghcr.io/hantse/arksaas-agent-service
     newName: ghcr.io/hantse/arksaas-agent-service
     newTag: a3296fa83eaa4c8b693b4fa7c2c866cdd1f894e0
@@ -54,4 +54,4 @@ images:
     newTag: a3296fa83eaa4c8b693b4fa7c2c866cdd1f894e0
   - name: ghcr.io/hantse/orkestrix-frontend
     newName: ghcr.io/hantse/orkestrix-frontend
-    newTag: sha-c5ee0c706d51c3c76f1fb4a839e8b01fc057f919
+    newTag: sha-917b19326ca1aaa9073b2a7daee3534bc43ba48b
