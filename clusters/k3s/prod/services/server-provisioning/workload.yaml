@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: server-provisioning-service
 spec:
-  replicas: 3
+  replicas: 5
   revisionHistoryLimit: 1
   selector:
     matchLabels:
@@ -74,6 +74,58 @@ spec:
         - name: firebase-admin
           secret:
             secretName: firebase-admin
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server-provisioning-worker
+spec:
+  replicas: 5
+  revisionHistoryLimit: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: server-provisioning-worker
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: server-provisioning-worker
+    spec:
+      serviceAccountName: arksaas-sa
+      containers:
+        - name: server-provisioning-worker
+          image: ghcr.io/hantse/arksaas-server-provisioning-worker:f71f9c230f2fa3d8716f5ac7a06f89e4dea17bcc
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8080
+          env:
+            - name: Database__ApplyMigrationsOnStartup
+              value: "false"
+          envFrom:
+            - configMapRef:
+                name: arksaas-public-config
+            - secretRef:
+                name: arksaas-runtime-secrets
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: http
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: http
+            initialDelaySeconds: 30
+            periodSeconds: 20
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
 ---
 apiVersion: v1
 kind: Service

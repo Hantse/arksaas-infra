@@ -11,3 +11,4 @@ data:
   Jaeger__Host: http://monitoringvm:4317
   Seq__Url: https://seq.fluxspool.app
   Ollama__BaseUrl: http://localhost:11434
+  ASPNETCORE_ENVIRONMENT: Production
