@@ -24,7 +24,7 @@ resources:
 images:
   - name: ghcr.io/hantse/arksaas-gateway
     newName: ghcr.io/hantse/arksaas-gateway
-    newTag: e490d51ba3480cef49670de035399658da4a36e8
+    newTag: 229939b17faad315ebed4fe33a61a7b8cc6fc144
   - name: ghcr.io/hantse/arksaas-admin-service
     newName: ghcr.io/hantse/arksaas-admin-service
     newTag: e490d51ba3480cef49670de035399658da4a36e8
@@ -33,25 +33,25 @@ images:
     newTag: e490d51ba3480cef49670de035399658da4a36e8
   - name: ghcr.io/hantse/arksaas-billing-service
     newName: ghcr.io/hantse/arksaas-billing-service
-    newTag: e490d51ba3480cef49670de035399658da4a36e8
+    newTag: 229939b17faad315ebed4fe33a61a7b8cc6fc144
   - name: ghcr.io/hantse/arksaas-data-service
     newName: ghcr.io/hantse/arksaas-data-service
-    newTag: e490d51ba3480cef49670de035399658da4a36e8
+    newTag: 229939b17faad315ebed4fe33a61a7b8cc6fc144
   - name: ghcr.io/hantse/arksaas-identity-service
     newName: ghcr.io/hantse/arksaas-identity-service
-    newTag: e490d51ba3480cef49670de035399658da4a36e8
+    newTag: 229939b17faad315ebed4fe33a61a7b8cc6fc144
   - name: ghcr.io/hantse/arksaas-llm-service
     newName: ghcr.io/hantse/arksaas-llm-service
-    newTag: e490d51ba3480cef49670de035399658da4a36e8
+    newTag: 229939b17faad315ebed4fe33a61a7b8cc6fc144
   - name: ghcr.io/hantse/arksaas-notification-service
     newName: ghcr.io/hantse/arksaas-notification-service
-    newTag: e490d51ba3480cef49670de035399658da4a36e8
+    newTag: 229939b17faad315ebed4fe33a61a7b8cc6fc144
   - name: ghcr.io/hantse/arksaas-permission-service
     newName: ghcr.io/hantse/arksaas-permission-service
-    newTag: e490d51ba3480cef49670de035399658da4a36e8
+    newTag: 229939b17faad315ebed4fe33a61a7b8cc6fc144
   - name: ghcr.io/hantse/arksaas-server-provisioning-service
     newName: ghcr.io/hantse/arksaas-server-provisioning-service
-    newTag: e490d51ba3480cef49670de035399658da4a36e8
+    newTag: 229939b17faad315ebed4fe33a61a7b8cc6fc144
   - name: ghcr.io/hantse/orkestrix-frontend
     newName: ghcr.io/hantse/orkestrix-frontend
     newTag: sha-6595ecc4d315460c7b836950954af7cea9d696f0
