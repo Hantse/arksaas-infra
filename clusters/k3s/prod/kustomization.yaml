@@ -24,31 +24,31 @@ resources:
 images:
   - name: ghcr.io/hantse/arksaas-gateway
     newName: ghcr.io/hantse/arksaas-gateway
-    newTag: bbe184972654bda0fe33784bfaaf486b63580194
+    newTag: e490d51ba3480cef49670de035399658da4a36e8
   - name: ghcr.io/hantse/arksaas-admin-service
     newName: ghcr.io/hantse/arksaas-admin-service
-    newTag: bbe184972654bda0fe33784bfaaf486b63580194
+    newTag: e490d51ba3480cef49670de035399658da4a36e8
   - name: ghcr.io/hantse/arksaas-agent-service
     newName: ghcr.io/hantse/arksaas-agent-service
-    newTag: bbe184972654bda0fe33784bfaaf486b63580194
+    newTag: e490d51ba3480cef49670de035399658da4a36e8
   - name: ghcr.io/hantse/arksaas-billing-service
     newName: ghcr.io/hantse/arksaas-billing-service
-    newTag: bbe184972654bda0fe33784bfaaf486b63580194
+    newTag: e490d51ba3480cef49670de035399658da4a36e8
   - name: ghcr.io/hantse/arksaas-data-service
     newName: ghcr.io/hantse/arksaas-data-service
-    newTag: bbe184972654bda0fe33784bfaaf486b63580194
+    newTag: e490d51ba3480cef49670de035399658da4a36e8
   - name: ghcr.io/hantse/arksaas-identity-service
     newName: ghcr.io/hantse/arksaas-identity-service
-    newTag: bbe184972654bda0fe33784bfaaf486b63580194
+    newTag: e490d51ba3480cef49670de035399658da4a36e8
   - name: ghcr.io/hantse/arksaas-llm-service
     newName: ghcr.io/hantse/arksaas-llm-service
-    newTag: bbe184972654bda0fe33784bfaaf486b63580194
+    newTag: e490d51ba3480cef49670de035399658da4a36e8
   - name: ghcr.io/hantse/arksaas-notification-service
     newName: ghcr.io/hantse/arksaas-notification-service
-    newTag: bbe184972654bda0fe33784bfaaf486b63580194
+    newTag: e490d51ba3480cef49670de035399658da4a36e8
   - name: ghcr.io/hantse/arksaas-permission-service
     newName: ghcr.io/hantse/arksaas-permission-service
-    newTag: bbe184972654bda0fe33784bfaaf486b63580194
+    newTag: e490d51ba3480cef49670de035399658da4a36e8
   - name: ghcr.io/hantse/arksaas-server-provisioning-service
     newName: ghcr.io/hantse/arksaas-server-provisioning-service
     newTag: bbe184972654bda0fe33784bfaaf486b63580194
