@@ -24,7 +24,7 @@ resources:
 images:
   - name: ghcr.io/hantse/arksaas-gateway
     newName: ghcr.io/hantse/arksaas-gateway
-    newTag: 77127c4539d3ea42c907430bc2282867654e5c66
+    newTag: 27d0449ddbf710b5aea28d6e8756d5dddb596a4d
   - name: ghcr.io/hantse/arksaas-admin-service
     newName: ghcr.io/hantse/arksaas-admin-service
     newTag: 77127c4539d3ea42c907430bc2282867654e5c66
@@ -36,16 +36,16 @@ images:
     newTag: 77127c4539d3ea42c907430bc2282867654e5c66
   - name: ghcr.io/hantse/arksaas-data-service
     newName: ghcr.io/hantse/arksaas-data-service
-    newTag: 77127c4539d3ea42c907430bc2282867654e5c66
+    newTag: 27d0449ddbf710b5aea28d6e8756d5dddb596a4d
   - name: ghcr.io/hantse/arksaas-identity-service
     newName: ghcr.io/hantse/arksaas-identity-service
     newTag: 77127c4539d3ea42c907430bc2282867654e5c66
   - name: ghcr.io/hantse/arksaas-llm-service
     newName: ghcr.io/hantse/arksaas-llm-service
-    newTag: 77127c4539d3ea42c907430bc2282867654e5c66
+    newTag: 27d0449ddbf710b5aea28d6e8756d5dddb596a4d
   - name: ghcr.io/hantse/arksaas-notification-service
     newName: ghcr.io/hantse/arksaas-notification-service
-    newTag: 77127c4539d3ea42c907430bc2282867654e5c66
+    newTag: 27d0449ddbf710b5aea28d6e8756d5dddb596a4d
   - name: ghcr.io/hantse/arksaas-permission-service
     newName: ghcr.io/hantse/arksaas-permission-service
     newTag: 77127c4539d3ea42c907430bc2282867654e5c66
