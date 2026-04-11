@@ -24,7 +24,7 @@ resources:
 images:
   - name: ghcr.io/hantse/arksaas-gateway
     newName: ghcr.io/hantse/arksaas-gateway
-    newTag: 376085b78f58591db45ca7045e97427ffc6d0b2d
+    newTag: 1f4401321ba6df299b2f6042cb8196fa61826cd3
   - name: ghcr.io/hantse/arksaas-admin-service
     newName: ghcr.io/hantse/arksaas-admin-service
     newTag: 376085b78f58591db45ca7045e97427ffc6d0b2d
@@ -36,25 +36,25 @@ images:
     newTag: 376085b78f58591db45ca7045e97427ffc6d0b2d
   - name: ghcr.io/hantse/arksaas-data-service
     newName: ghcr.io/hantse/arksaas-data-service
-    newTag: 376085b78f58591db45ca7045e97427ffc6d0b2d
+    newTag: 1f4401321ba6df299b2f6042cb8196fa61826cd3
   - name: ghcr.io/hantse/arksaas-identity-service
     newName: ghcr.io/hantse/arksaas-identity-service
-    newTag: 376085b78f58591db45ca7045e97427ffc6d0b2d
+    newTag: 1f4401321ba6df299b2f6042cb8196fa61826cd3
   - name: ghcr.io/hantse/arksaas-llm-service
     newName: ghcr.io/hantse/arksaas-llm-service
-    newTag: 376085b78f58591db45ca7045e97427ffc6d0b2d
+    newTag: 1f4401321ba6df299b2f6042cb8196fa61826cd3
   - name: ghcr.io/hantse/arksaas-notification-service
     newName: ghcr.io/hantse/arksaas-notification-service
-    newTag: 376085b78f58591db45ca7045e97427ffc6d0b2d
+    newTag: 1f4401321ba6df299b2f6042cb8196fa61826cd3
   - name: ghcr.io/hantse/arksaas-permission-service
     newName: ghcr.io/hantse/arksaas-permission-service
-    newTag: 376085b78f58591db45ca7045e97427ffc6d0b2d
+    newTag: 1f4401321ba6df299b2f6042cb8196fa61826cd3
   - name: ghcr.io/hantse/arksaas-server-provisioning-service
     newName: ghcr.io/hantse/arksaas-server-provisioning-service
-    newTag: 376085b78f58591db45ca7045e97427ffc6d0b2d
+    newTag: 1f4401321ba6df299b2f6042cb8196fa61826cd3
   - name: ghcr.io/hantse/orkestrix-frontend
     newName: ghcr.io/hantse/orkestrix-frontend
     newTag: sha-6b2a570bf1020b2870e06057df57ff12d5df2005
   - name: ghcr.io/hantse/arksaas-server-provisioning-worker
     newName: ghcr.io/hantse/arksaas-server-provisioning-worker
-    newTag: 376085b78f58591db45ca7045e97427ffc6d0b2d
+    newTag: 1f4401321ba6df299b2f6042cb8196fa61826cd3
