@@ -27,19 +27,19 @@ images:
     newTag: 27d0449ddbf710b5aea28d6e8756d5dddb596a4d
   - name: ghcr.io/hantse/arksaas-admin-service
     newName: ghcr.io/hantse/arksaas-admin-service
-    newTag: 77127c4539d3ea42c907430bc2282867654e5c66
+    newTag: 27d0449ddbf710b5aea28d6e8756d5dddb596a4d
   - name: ghcr.io/hantse/arksaas-agent-service
     newName: ghcr.io/hantse/arksaas-agent-service
-    newTag: 77127c4539d3ea42c907430bc2282867654e5c66
+    newTag: 27d0449ddbf710b5aea28d6e8756d5dddb596a4d
   - name: ghcr.io/hantse/arksaas-billing-service
     newName: ghcr.io/hantse/arksaas-billing-service
-    newTag: 77127c4539d3ea42c907430bc2282867654e5c66
+    newTag: 27d0449ddbf710b5aea28d6e8756d5dddb596a4d
   - name: ghcr.io/hantse/arksaas-data-service
     newName: ghcr.io/hantse/arksaas-data-service
     newTag: 27d0449ddbf710b5aea28d6e8756d5dddb596a4d
   - name: ghcr.io/hantse/arksaas-identity-service
     newName: ghcr.io/hantse/arksaas-identity-service
-    newTag: 77127c4539d3ea42c907430bc2282867654e5c66
+    newTag: 27d0449ddbf710b5aea28d6e8756d5dddb596a4d
   - name: ghcr.io/hantse/arksaas-llm-service
     newName: ghcr.io/hantse/arksaas-llm-service
     newTag: 27d0449ddbf710b5aea28d6e8756d5dddb596a4d
@@ -51,10 +51,10 @@ images:
     newTag: 77127c4539d3ea42c907430bc2282867654e5c66
   - name: ghcr.io/hantse/arksaas-server-provisioning-service
     newName: ghcr.io/hantse/arksaas-server-provisioning-service
-    newTag: 77127c4539d3ea42c907430bc2282867654e5c66
+    newTag: 27d0449ddbf710b5aea28d6e8756d5dddb596a4d
   - name: ghcr.io/hantse/orkestrix-frontend
     newName: ghcr.io/hantse/orkestrix-frontend
     newTag: sha-ab0038f6c5bc2108d27a8f06dbc814eb50b6c713
   - name: ghcr.io/hantse/arksaas-server-provisioning-worker
     newName: ghcr.io/hantse/arksaas-server-provisioning-worker
-    newTag: 77127c4539d3ea42c907430bc2282867654e5c66
+    newTag: 27d0449ddbf710b5aea28d6e8756d5dddb596a4d
