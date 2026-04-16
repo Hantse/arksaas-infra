@@ -48,7 +48,7 @@ images:
     newTag: 09c23cd9398d1f6f8762c89c7cb2d449efd3c9e7
   - name: ghcr.io/hantse/arksaas-permission-service
     newName: ghcr.io/hantse/arksaas-permission-service
-    newTag: d50cd052c9b686c5655bc9d6fdd067f311fec36e
+    newTag: 09c23cd9398d1f6f8762c89c7cb2d449efd3c9e7
   - name: ghcr.io/hantse/arksaas-server-provisioning-service
     newName: ghcr.io/hantse/arksaas-server-provisioning-service
     newTag: 09c23cd9398d1f6f8762c89c7cb2d449efd3c9e7
