@@ -54,7 +54,7 @@ images:
     newTag: 6e1de976db46cce46132e319a86764de1bb50b60
   - name: ghcr.io/hantse/orkestrix-frontend
     newName: ghcr.io/hantse/orkestrix-frontend
-    newTag: sha-525050e4ae3976aec2b09ac397eb1068f893ad00
+    newTag: sha-aac2ec4f6d924a366d567d0d97905bbcae0a31d8
   - name: ghcr.io/hantse/arksaas-server-provisioning-worker
     newName: ghcr.io/hantse/arksaas-server-provisioning-worker
     newTag: 6e1de976db46cce46132e319a86764de1bb50b60
