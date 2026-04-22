@@ -24,16 +24,16 @@ resources:
 images:
   - name: ghcr.io/hantse/arksaas-gateway
     newName: ghcr.io/hantse/arksaas-gateway
-    newTag: 84b6f1aafc6912cc161628feb05dc6a0295c83fe
+    newTag: ce15ef35ff34ad125b189c1d529e62c5e749bfa4
   - name: ghcr.io/hantse/arksaas-admin-service
     newName: ghcr.io/hantse/arksaas-admin-service
-    newTag: 84b6f1aafc6912cc161628feb05dc6a0295c83fe
+    newTag: ce15ef35ff34ad125b189c1d529e62c5e749bfa4
   - name: ghcr.io/hantse/arksaas-agent-service
     newName: ghcr.io/hantse/arksaas-agent-service
-    newTag: 84b6f1aafc6912cc161628feb05dc6a0295c83fe
+    newTag: ce15ef35ff34ad125b189c1d529e62c5e749bfa4
   - name: ghcr.io/hantse/arksaas-billing-service
     newName: ghcr.io/hantse/arksaas-billing-service
-    newTag: 84b6f1aafc6912cc161628feb05dc6a0295c83fe
+    newTag: ce15ef35ff34ad125b189c1d529e62c5e749bfa4
   - name: ghcr.io/hantse/arksaas-data-service
     newName: ghcr.io/hantse/arksaas-data-service
     newTag: ce15ef35ff34ad125b189c1d529e62c5e749bfa4
