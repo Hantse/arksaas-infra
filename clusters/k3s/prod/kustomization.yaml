@@ -24,37 +24,37 @@ resources:
 images:
   - name: ghcr.io/hantse/arksaas-gateway
     newName: ghcr.io/hantse/arksaas-gateway
-    newTag: a3284cc4d37af19e966ebf3dbb9e09dffc783ac6
+    newTag: b1f81ea22bd691ffe3d2235520a24a2395bf8f66
   - name: ghcr.io/hantse/arksaas-admin-service
     newName: ghcr.io/hantse/arksaas-admin-service
-    newTag: a3284cc4d37af19e966ebf3dbb9e09dffc783ac6
+    newTag: b1f81ea22bd691ffe3d2235520a24a2395bf8f66
   - name: ghcr.io/hantse/arksaas-agent-service
     newName: ghcr.io/hantse/arksaas-agent-service
-    newTag: a3284cc4d37af19e966ebf3dbb9e09dffc783ac6
+    newTag: b1f81ea22bd691ffe3d2235520a24a2395bf8f66
   - name: ghcr.io/hantse/arksaas-billing-service
     newName: ghcr.io/hantse/arksaas-billing-service
-    newTag: a3284cc4d37af19e966ebf3dbb9e09dffc783ac6
+    newTag: b1f81ea22bd691ffe3d2235520a24a2395bf8f66
   - name: ghcr.io/hantse/arksaas-data-service
     newName: ghcr.io/hantse/arksaas-data-service
-    newTag: a3284cc4d37af19e966ebf3dbb9e09dffc783ac6
+    newTag: b1f81ea22bd691ffe3d2235520a24a2395bf8f66
   - name: ghcr.io/hantse/arksaas-identity-service
     newName: ghcr.io/hantse/arksaas-identity-service
-    newTag: a3284cc4d37af19e966ebf3dbb9e09dffc783ac6
+    newTag: b1f81ea22bd691ffe3d2235520a24a2395bf8f66
   - name: ghcr.io/hantse/arksaas-llm-service
     newName: ghcr.io/hantse/arksaas-llm-service
-    newTag: a3284cc4d37af19e966ebf3dbb9e09dffc783ac6
+    newTag: b1f81ea22bd691ffe3d2235520a24a2395bf8f66
   - name: ghcr.io/hantse/arksaas-notification-service
     newName: ghcr.io/hantse/arksaas-notification-service
-    newTag: a3284cc4d37af19e966ebf3dbb9e09dffc783ac6
+    newTag: b1f81ea22bd691ffe3d2235520a24a2395bf8f66
   - name: ghcr.io/hantse/arksaas-permission-service
     newName: ghcr.io/hantse/arksaas-permission-service
-    newTag: a3284cc4d37af19e966ebf3dbb9e09dffc783ac6
+    newTag: b1f81ea22bd691ffe3d2235520a24a2395bf8f66
   - name: ghcr.io/hantse/arksaas-server-provisioning-service
     newName: ghcr.io/hantse/arksaas-server-provisioning-service
-    newTag: a3284cc4d37af19e966ebf3dbb9e09dffc783ac6
+    newTag: b1f81ea22bd691ffe3d2235520a24a2395bf8f66
   - name: ghcr.io/hantse/orkestrix-frontend
     newName: ghcr.io/hantse/orkestrix-frontend
     newTag: sha-6c109a04fe4a8963cd15dfb77227912e9be6ed57
   - name: ghcr.io/hantse/arksaas-server-provisioning-worker
     newName: ghcr.io/hantse/arksaas-server-provisioning-worker
-    newTag: a3284cc4d37af19e966ebf3dbb9e09dffc783ac6
+    newTag: b1f81ea22bd691ffe3d2235520a24a2395bf8f66
