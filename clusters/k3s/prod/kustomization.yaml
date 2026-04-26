@@ -57,4 +57,4 @@ images:
     newTag: sha-42da1268307a12018a06169d69b2a7d1c711ce07
   - name: ghcr.io/hantse/arksaas-server-provisioning-worker
     newName: ghcr.io/hantse/arksaas-server-provisioning-worker
-    newTag: b3e2581979cb99ec33f93d6e6417892e18860b0f
+    newTag: 809bff8eece978b19a016c202c740d01a0f74ef5
