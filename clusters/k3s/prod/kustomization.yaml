@@ -33,13 +33,13 @@ images:
     newTag: 54cfccfe51c04ec5fd55b0e2a5190dabb76ebc69
   - name: ghcr.io/hantse/arksaas-billing-service
     newName: ghcr.io/hantse/arksaas-billing-service
-    newTag: 553bcf0faf76d7eacf152b22b4ac9aefbf5d062e
+    newTag: 54cfccfe51c04ec5fd55b0e2a5190dabb76ebc69
   - name: ghcr.io/hantse/arksaas-data-service
     newName: ghcr.io/hantse/arksaas-data-service
     newTag: 54cfccfe51c04ec5fd55b0e2a5190dabb76ebc69
   - name: ghcr.io/hantse/arksaas-identity-service
     newName: ghcr.io/hantse/arksaas-identity-service
-    newTag: 553bcf0faf76d7eacf152b22b4ac9aefbf5d062e
+    newTag: 54cfccfe51c04ec5fd55b0e2a5190dabb76ebc69
   - name: ghcr.io/hantse/arksaas-llm-service
     newName: ghcr.io/hantse/arksaas-llm-service
     newTag: 54cfccfe51c04ec5fd55b0e2a5190dabb76ebc69
