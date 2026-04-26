@@ -42,13 +42,13 @@ images:
     newTag: 7070ff942572dbf1d43cab62af12067a01c9832e
   - name: ghcr.io/hantse/arksaas-llm-service
     newName: ghcr.io/hantse/arksaas-llm-service
-    newTag: 7070ff942572dbf1d43cab62af12067a01c9832e
+    newTag: d4e358a41e6f85c501bbc0d75e7f407e3dd2495b
   - name: ghcr.io/hantse/arksaas-notification-service
     newName: ghcr.io/hantse/arksaas-notification-service
     newTag: 7070ff942572dbf1d43cab62af12067a01c9832e
   - name: ghcr.io/hantse/arksaas-permission-service
     newName: ghcr.io/hantse/arksaas-permission-service
-    newTag: 7070ff942572dbf1d43cab62af12067a01c9832e
+    newTag: d4e358a41e6f85c501bbc0d75e7f407e3dd2495b
   - name: ghcr.io/hantse/arksaas-server-provisioning-service
     newName: ghcr.io/hantse/arksaas-server-provisioning-service
     newTag: 7070ff942572dbf1d43cab62af12067a01c9832e
