@@ -27,7 +27,7 @@ images:
     newTag: f7b8a878f4ff200a6ff87f8f1ef9dfb737a362bd
   - name: ghcr.io/hantse/arksaas-admin-service
     newName: ghcr.io/hantse/arksaas-admin-service
-    newTag: 975e3766532aeb44c71c0100aebf28d6b2c5ab83
+    newTag: f7b8a878f4ff200a6ff87f8f1ef9dfb737a362bd
   - name: ghcr.io/hantse/arksaas-agent-service
     newName: ghcr.io/hantse/arksaas-agent-service
     newTag: f7b8a878f4ff200a6ff87f8f1ef9dfb737a362bd
